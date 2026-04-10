@@ -181,6 +181,22 @@ plt.show()
   <em> Señal EMG en el tiempo (filtrada) </em>
 </p>
 
+<p align="center">
+  <img src="2.png" width="700">
+</p>
+
+<p align="center">
+  <em> Evolución de frecuencias EMG (filtrada) </em>
+</p>
+
+<p align="center">
+  <img src="2.png" width="700">
+</p>
+
+<p align="center">
+  <em> Tabla de resultados </em>
+</p>
+
 ---
 
 ### Parte B - Captura de la señal de paciente
