@@ -190,7 +190,7 @@ plt.show()
 </p>
 
 <p align="center">
-  <img src="2.png" width="700">
+  <img src="3.png" width="700">
 </p>
 
 <p align="center">
