@@ -30,3 +30,14 @@ Este repositorio contiene el desarrollo de la práctica de laboratorio "Señales
 
 ## Diagrama de Flujo
 
+
+---
+### Parte A — Captura de la señal emulada
+
+---
+
+### Parte B - Captura de la señal de paciente
+
+---
+### Parte C - Análisis espectral mediante FFT
+
