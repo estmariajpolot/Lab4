@@ -47,90 +47,6 @@ La señal filtrada fue dividida en segmentos usando una ventana de 0.2 s con pas
 Para cada segmento se aplicó frecuencia media pondera las frecuencias por su magnitud espectral, mientras que la frecuencia mediana divide el espectro en dos mitades de igual energía acumulada. Ambos parámetros son indicadores clásicos de fatiga muscular: en condiciones de fatiga, se espera un desplazamiento hacia frecuencias más bajas.
 
 ```python
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-from scipy.fft import fft, fftfreq
-from scipy.signal import butter, filtfilt
-
-
-# CARGA DE DATOS PARTE A
-
-data = np.loadtxt("EMG3.txt", skiprows=1)
-
-t = data[:, 0]
-x = data[:, 1]
-
-fs = int(1 / (t[1] - t[0]))  # frecuencia de muestreo
-print("Frecuencia de muestreo:", fs)
-print("Duración de la señal:", t[-1] - t[0])
-
-
-# FILTRO PASA-BAJOS 410 Hz
-
-fc = 410  # frecuencia de corte
-orden = 4
-
-w = fc / (fs / 2)  # normalización
-
-b, a = butter(orden, w, btype='low')
-
-x_filtrada = filtfilt(b, a, x)
-
-
-#GRAFICA SEÑAL
-
-plt.figure(figsize=(20,10))
-plt.plot(t, x, label="Original", alpha=0.5)
-plt.plot(t, x_filtrada, label="Filtrada (450 Hz)", linewidth=2)
-plt.xlabel("Tiempo (s)")
-plt.ylabel("Amplitud")
-plt.title("Señal EMG en el tiempo (filtrada)")
-plt.legend()
-plt.grid()
-plt.show()
-
-
-#  VENTANAS DESLIZANTES
-
-ventana_seg = 0.2
-paso_seg = 0.08
-
-ventana = int(ventana_seg * fs)
-paso = int(paso_seg * fs)
-
-segmentos = []
-
-for i in range(0, len(x_filtrada), paso):
-    fin = i + ventana
-
-    if fin > len(x_filtrada):
-        fin = len(x_filtrada)
-
-    segmentos.append((i, fin))
-
-print("Número de segmentos:", len(segmentos))
-
-
-# FRECUENCIA MEDIA Y MEDIANA
-
-f_media = []
-f_mediana = []
-tiempos_inicio = []
-
-for seg in segmentos:
-    xi = x_filtrada[seg[0]:seg[1]]
-
-    if len(xi) < 10:
-        continue
-
-    t_inicio = t[seg[0]]
-
-    # zero-padding si la ventana es incompleta
-    if len(xi) < ventana:
-        xi = np.pad(xi, (0, ventana - len(xi)))
-
-    N = len(xi)
 
     X = np.abs(fft(xi))
     freqs = fftfreq(N, 1/fs)
@@ -152,8 +68,16 @@ for seg in segmentos:
     tiempos_inicio.append(t_inicio)
     f_media.append(fm)
     f_mediana.append(fmed)
+ ```
+<p align="center">
+  <img src="2.png" width="700">
+</p>
 
+<p align="center">
+  <em> Evolución de frecuencias EMG (filtrada) </em>
+</p>
 
+```python
 # TABLA
 
 tabla = pd.DataFrame({
@@ -181,14 +105,6 @@ plt.grid()
 
 plt.show()
  ```
-
-<p align="center">
-  <img src="2.png" width="700">
-</p>
-
-<p align="center">
-  <em> Evolución de frecuencias EMG (filtrada) </em>
-</p>
 
 <p align="center">
   <img src="3.png" width="700">
