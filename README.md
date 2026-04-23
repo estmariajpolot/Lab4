@@ -36,7 +36,7 @@ Este repositorio contiene el desarrollo de la práctica de laboratorio "Señales
 Se cargó la señal EMG desde el archivo EMG3.txt y se determinó una frecuencia de muestreo a partir de los intervalos de tiempo. Luego se aplicó un filtro pasa-bajos Butterworth de orden 4 con frecuencia de corte de 410 Hz, con el fin de eliminar ruido de alta frecuencia sin afectar el contenido muscular relevante. En la gráfica de la señal en el tiempo se puede observar que la señal filtrada (naranja) sigue fielmente la envolvente de la señal original (azul), confirmando que el filtro actuó correctamente sin distorsionar la forma de onda.
 
 <p align="center">
-  <img src="1.png" width="700">
+  <img src="A1.png" width="700">
 </p>
 
 <p align="center">
@@ -70,7 +70,7 @@ Para cada segmento se aplicó frecuencia media pondera las frecuencias por su ma
     f_mediana.append(fmed)
  ```
 <p align="center">
-  <img src="2.png" width="700">
+  <img src="A2.png" width="700">
 </p>
 
 <p align="center">
@@ -107,7 +107,7 @@ plt.show()
  ```
 
 <p align="center">
-  <img src="3.png" width="700">
+  <img src="T.png" width="700">
 </p>
 
 <p align="center">
@@ -119,6 +119,70 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 ---
 
 ### Parte B - Captura de la señal de paciente
+
+<p align="center">
+  <img src="B1.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 1 EMG (filtrada) </em>
+</p>
+
+<p align="center">
+  <img src="B2.png" width="700">
+</p>
+
+<p align="center">
+  <em> Evolución de frecuencias Señal 1  EMG (filtrada) </em>
+</p>
+
+<p align="center">
+  <img src="B3.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 1 FFT Global </em>
+</p>
+
+<p align="center">
+  <img src="B4.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 1 FFT Ventanas</em>
+</p>
+
+<p align="center">
+  <img src="B5.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 1  desplazamiento del pico </em>
+</p>
+
+<p align="center">
+  <img src="B1.png" width="700">
+</p>
+
+<p align="center">
+  <em> Evolución de frecuencias EMG (filtrada) </em>
+</p>
+
+<p align="center">
+  <img src="B1.png" width="700">
+</p>
+
+<p align="center">
+  <em> Evolución de frecuencias EMG (filtrada) </em>
+</p>
+
+<p align="center">
+  <img src="B1.png" width="700">
+</p>
+
+<p align="center">
+  <em> Evolución de frecuencias EMG (filtrada) </em>
+</p>
 
 ---
 ### Parte C - Análisis espectral mediante FFT
