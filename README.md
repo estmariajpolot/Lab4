@@ -107,7 +107,7 @@ plt.show()
  ```
 
 <p align="center">
-  <img src="T.png" width="700">
+  <img src="T1.png" width="700">
 </p>
 
 <p align="center">
@@ -151,6 +151,16 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
   <em> Evolución de frecuencias Señal 1  EMG (filtrada) </em>
 </p>
 
+
+<p align="center">
+  <img src="T2.png" width="700">
+</p>
+
+<p align="center">
+  <em> Tabla de resultados </em>
+</p>
+
+
 <p align="center">
   <img src="B3.png" width="700">
 </p>
@@ -176,6 +186,15 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 </p>
 
 <p align="center">
+  <img src="T3.png" width="700">
+</p>
+
+<p align="center">
+  <em> Tabla de resultados </em>
+</p>
+
+
+<p align="center">
   <img src="B2.1.png" width="700">
 </p>
 
@@ -189,6 +208,14 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 
 <p align="center">
   <em> Evolución de frecuencias Señal 2  EMG (filtrada) </em>
+</p>
+
+<p align="center">
+  <img src="T4.png" width="700">
+</p>
+
+<p align="center">
+  <em> Tabla de resultados </em>
 </p>
 
 <p align="center">
@@ -214,6 +241,15 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 <p align="center">
   <em> Señal 2  desplazamiento del pico </em>
 </p>
+
+<p align="center">
+  <img src="T5.png" width="700">
+</p>
+
+<p align="center">
+  <em> Tabla de resultados </em>
+</p>
+
 
 
 
