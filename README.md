@@ -36,7 +36,13 @@ En conjunto, este procedimiento permitió caracterizar el comportamiento espectr
 ---
 
 ## Diagrama de Flujo
+<p align="center">
+  <img src="Diagrama.jpeg" width="700">
+</p>
 
+<p align="center">
+  <em> Diagrama de flujo </em>
+</p>
 
 ---
 ### Parte A — Captura de la señal emulada
