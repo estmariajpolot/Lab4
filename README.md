@@ -23,8 +23,15 @@ Este repositorio contiene el desarrollo de la práctica de laboratorio "Señales
 
 ----
 ##  Metodología 
+El desarrollo del análisis se estructuró en varias etapas principales, utilizando herramientas de programación en Python para el procesamiento y estudio de señales electromiográficas (EMG).
 
+En primer lugar, se definieron funciones para el filtrado de señales (pasa-banda y pasa-bajos), la normalización y el cálculo de parámetros espectrales como la frecuencia media y la frecuencia mediana a partir de la transformada de Fourier (FFT). Estas funciones permitieron establecer una base sólida para el procesamiento posterior de las señales.
 
+En una segunda etapa, correspondiente a la Parte A, se cargó una señal EMG desde un archivo de texto, a partir del cual se obtuvo el vector de tiempo y la señal. Luego, se calculó la frecuencia de muestreo y se aplicó un filtro pasa-bajos para suavizar la señal. Se realizaron gráficas tanto de la señal original como de la filtrada, así como su análisis en frecuencia mediante la FFT global. Posteriormente, la señal fue segmentada en ventanas móviles, permitiendo calcular la frecuencia media y mediana en cada segmento. Estos resultados se organizaron en una tabla y se analizaron mediante gráficas junto con líneas de tendencia para observar su comportamiento a lo largo del tiempo.
+
+Finalmente, en las Partes B y C, se procesaron señales adicionales provenientes de archivos distintos. En este caso, las señales fueron centradas eliminando su componente DC y filtradas con un filtro pasa-banda. Se repitió el análisis temporal y frecuencial, incluyendo la FFT global. Luego, las señales se dividieron en segmentos más amplios para evaluar la evolución de la frecuencia media y mediana, lo cual permitió analizar fenómenos como la fatiga muscular mediante tendencias en el tiempo. Adicionalmente, se realizó un análisis específico de la FFT en tres segmentos clave (inicio, medio y final), identificando la frecuencia pico en cada uno y evaluando su desplazamiento mediante gráficos de barras y líneas de tendencia.
+
+En conjunto, este procedimiento permitió caracterizar el comportamiento espectral de las señales EMG y analizar su evolución temporal, facilitando la interpretación de cambios asociados a condiciones fisiológicas como la fatiga.
 
 ---
 
