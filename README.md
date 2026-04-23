@@ -161,29 +161,44 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 </p>
 
 <p align="center">
-  <img src="B1.png" width="700">
+  <img src="B2.1.png" width="700">
 </p>
 
 <p align="center">
-  <em> Evolución de frecuencias EMG (filtrada) </em>
+  <em> Señal 2 EMG (filtrada) </em>
 </p>
 
 <p align="center">
-  <img src="B1.png" width="700">
+  <img src="B2.2.png" width="700">
 </p>
 
 <p align="center">
-  <em> Evolución de frecuencias EMG (filtrada) </em>
+  <em> Evolución de frecuencias Señal 2  EMG (filtrada) </em>
 </p>
 
 <p align="center">
-  <img src="B1.png" width="700">
+  <img src="B2.3.png" width="700">
 </p>
 
 <p align="center">
-  <em> Evolución de frecuencias EMG (filtrada) </em>
+  <em> Señal 2 FFT Global </em>
 </p>
 
----
-### Parte C - Análisis espectral mediante FFT
+<p align="center">
+  <img src="B2.4.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 2 FFT Ventanas</em>
+</p>
+
+<p align="center">
+  <img src="B2.5.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 2  desplazamiento del pico </em>
+</p>
+
+
 
