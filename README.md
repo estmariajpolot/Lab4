@@ -121,7 +121,7 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 </p>
 
 <p align="center">
-  <em> Señal 1 EMG (filtrada) </em>
+  <em> FFT GLOBAL </em>
 </p>
 
 <p align="center">
@@ -129,7 +129,7 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 </p>
 
 <p align="center">
-  <em> Señal 1 EMG (filtrada) </em>
+  <em> FFT POR VENTANAS </em>
 </p>
 ---
 
