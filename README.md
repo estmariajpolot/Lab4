@@ -116,6 +116,21 @@ plt.show()
 
 En la tabla y la gráfica de evolución se observa que la frecuencia media muestra una tendencia general creciente a lo largo del tiempo, pasando de ~77 Hz al inicio hasta ~163 Hz al final, lo cual podría asociarse a un incremento en el reclutamiento de unidades motoras durante contracciones más intensas. La frecuencia mediana, por su parte, permanece cercana a 0 Hz en la mayoría de segmentos iniciales y solo muestra valores significativos hacia el final del registro (segmentos 10–12), lo que sugiere que el contenido espectral relevante se concentra en frecuencias muy bajas en gran parte de la señal, posiblemente por la naturaleza de la señal emulada o por artefactos de segmentación.
 
+<p align="center">
+  <img src="A3.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 1 EMG (filtrada) </em>
+</p>
+
+<p align="center">
+  <img src="A4.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 1 EMG (filtrada) </em>
+</p>
 ---
 
 ### Parte B - Captura de la señal de paciente
