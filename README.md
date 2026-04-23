@@ -164,7 +164,6 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
   <em> Evolución de frecuencias Señal 1  EMG (filtrada) </em>
 </p>
 
-
 <p align="center">
   <img src="T2.png" width="700">
 </p>
@@ -172,7 +171,6 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 <p align="center">
   <em> Tabla de resultados </em>
 </p>
-
 
 <p align="center">
   <img src="B3.png" width="700">
@@ -216,6 +214,14 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 </p>
 
 <p align="center">
+  <img src="B2.5.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 2  desplazamiento del pico </em>
+</p>
+
+<p align="center">
   <img src="B2.2.png" width="700">
 </p>
 
@@ -238,6 +244,8 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 <p align="center">
   <em> Señal 2 FFT Global </em>
 </p>
+
+---
 
 <p align="center">
   <img src="B2.4.png" width="700">
