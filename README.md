@@ -204,7 +204,6 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
   <em> Tabla de resultados </em>
 </p>
 
-
 <p align="center">
   <img src="B2.1.png" width="700">
 </p>
@@ -246,6 +245,7 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 </p>
 
 ---
+### Parte C -  Análisis espectral mediante FFT
 
 <p align="center">
   <img src="B2.4.png" width="700">
