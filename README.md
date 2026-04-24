@@ -250,17 +250,6 @@ Los datos muestran una reducción significativa de la frecuencia pico entre segm
 La segunda señal presenta un comportamiento similar a la primera, con actividad sostenida durante la contracción. Se observa una disminución progresiva en la intensidad de los bursts, consistente con el desarrollo de fatiga.
 
 <p align="center">
-  <img src="B2.5.png" width="700">
-</p>
-
-<p align="center">
-  <em> Señal 2  desplazamiento del pico </em>
-</p>
-
-El pico espectral también presenta una tendencia descendente clara. Este comportamiento confirma la reproducibilidad del fenómeno de fatiga en mediciones realizadas bajo las mismas condiciones experimentales. 
-
-
-<p align="center">
   <img src="B2.2.png" width="700">
 </p>
 
@@ -288,6 +277,16 @@ Los valores reflejan una reducción sostenida de las frecuencias característica
   <em> Señal 2 FFT Global </em>
 </p>
 El espectro global mantiene una distribución similar a la Señal 1, con energía concentrada en el rango típico del EMG. La ligera diferencia en el pico se atribuye a variaciones experimentales en la adquisición.
+
+<p align="center">
+  <img src="B2.5.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 2  desplazamiento del pico </em>
+</p>
+
+El pico espectral también presenta una tendencia descendente clara. Este comportamiento confirma la reproducibilidad del fenómeno de fatiga en mediciones realizadas bajo las mismas condiciones experimentales. 
 
 ---
 ### Parte C -  Análisis espectral mediante FFT
@@ -329,15 +328,6 @@ plt.show()
 ```
 Este bloque divide la señal en tres partes representativas del ejercicio, calcula la FFT de cada una e identifica la frecuencia de mayor magnitud en cada segmento, permitiendo cuantificar y visualizar el desplazamiento espectral asociado a la fatiga.
 
-<p align="center">
-  <img src="B5.png" width="700">
-</p>
-
-<p align="center">
-  <em> Señal 1  desplazamiento del pico </em>
-</p>
-
-Se observa un descenso progresivo de la frecuencia pico a lo largo del ejercicio. Este desplazamiento hacia frecuencias más bajas es un indicador claro de fatiga muscular, asociado a la disminución de la velocidad de conducción de los potenciales de acción en las fibras musculares.
 
 <p align="center">
   <img src="B2.4.png" width="700">
@@ -349,16 +339,6 @@ Se observa un descenso progresivo de la frecuencia pico a lo largo del ejercicio
 La comparación entre los espectros de inicio, mitad y final muestra una redistribución de la energía hacia frecuencias más bajas. La reducción de componentes de alta frecuencia evidencia el deterioro funcional del músculo durante la contracción sostenida.
 
 <p align="center">
-  <img src="B2.5.png" width="700">
-</p>
-
-<p align="center">
-  <em> Señal 2  desplazamiento del pico </em>
-</p>
-
-El pico espectral presenta una tendencia descendente consistente, confirmando el proceso de fatiga. La variación es similar a la observada en la Señal 1, lo que respalda la reproducibilidad del fenómeno.
-
-<p align="center">
   <img src="B4.png" width="700">
 </p>
 
@@ -367,6 +347,27 @@ El pico espectral presenta una tendencia descendente consistente, confirmando el
 </p>
 
 Los espectros muestran un desplazamiento progresivo del contenido frecuencial hacia la zona baja del espectro. Este comportamiento refleja el efecto de la fatiga sobre la dinámica de las unidades motoras.
+
+<p align="center">
+  <img src="B2.5.png" width="700">
+</p>
+
+
+<p align="center">
+  <img src="B5.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 1  desplazamiento del pico </em>
+</p>
+
+Se observa un descenso progresivo de la frecuencia pico a lo largo del ejercicio. Este desplazamiento hacia frecuencias más bajas es un indicador claro de fatiga muscular, asociado a la disminución de la velocidad de conducción de los potenciales de acción en las fibras musculares.
+
+<p align="center">
+  <em> Señal 2  desplazamiento del pico </em>
+</p>
+
+El pico espectral presenta una tendencia descendente consistente, confirmando el proceso de fatiga. La variación es similar a la observada en la Señal 1, lo que respalda la reproducibilidad del fenómeno.
 
 <p align="center">
   <img src="T3.png" width="700">
