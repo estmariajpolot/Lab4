@@ -144,8 +144,8 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 <p align="center">
   <em> FFT POR VENTANAS </em>
 </p>
----
 
+---
 ### Parte B - Captura de la señal de paciente
 
 Las dos señales reales capturadas sobre el bíceps de un voluntario sano mostraron, tras el filtrado pasa-banda entre 20 y 450 Hz y la eliminación del componente DC, un comportamiento espectral coherente con la fatiga muscular progresiva. En ambas señales se observó una tendencia decreciente en la frecuencia media y mediana a medida que avanzaban las contracciones, evidenciando el desplazamiento espectral hacia frecuencias más bajas asociado al agotamiento muscular. La comparación entre las dos señales permitió verificar la reproducibilidad del fenómeno dentro del mismo sujeto bajo condiciones similares.
