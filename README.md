@@ -353,6 +353,14 @@ Este bloque divide la señal en tres partes representativas del ejercicio, calcu
   <em> Tabla de resultados </em>
 </p>
 
+---
+### Preguntas para la Discusión
+- ¿Cambian los valores de frecuencia media y mediana a medida que el músculo se acerca a la fatiga? ¿A qué podría atribuirse este cambio?
+Sí, en condiciones de fatiga muscular real, tanto la frecuencia media como la frecuencia mediana experimentan una disminución progresiva a lo largo de las contracciones sostenidas. Este cambio se atribuye principalmente a la reducción de la velocidad de conducción de los potenciales de acción en las fibras musculares, causada por la acumulación de iones de hidrógeno (H⁺) producto del metabolismo anaeróbico, el agotamiento de los depósitos de ATP y fosfocreatina, y la acumulación de lactato intramuscular. Estos factores alteran la excitabilidad de la membrana celular y prolongan la duración de cada potencial de acción, lo cual desplaza la energía espectral de la señal EMG hacia componentes de menor frecuencia. Adicionalmente, durante la fatiga se produce un reclutamiento progresivo de unidades motoras de tipo II (fibras de contracción rápida), que generan potenciales de mayor amplitud pero también más lentos en su fase final, contribuyendo al desplazamiento espectral observado.
+
+- ¿Cómo justifica el uso de herramientas como la transformada de Fourier en escenarios como terapias de rehabilitación?
+La Transformada de Fourier permite descomponer una señal EMG en sus componentes frecuenciales, revelando información que no es perceptible en el dominio del tiempo. En el contexto de terapias de rehabilitación, esta herramienta resulta de gran valor porque permite cuantificar objetivamente el nivel de fatiga muscular de un paciente durante una sesión de ejercicio terapéutico, sin necesidad de procedimientos invasivos. De esta manera, el terapeuta puede ajustar en tiempo real la intensidad y duración del ejercicio, previniendo la sobrecarga muscular y reduciendo el riesgo de lesiones. Además, el seguimiento longitudinal de parámetros espectrales como la frecuencia mediana permite evaluar la evolución de la capacidad muscular del paciente a lo largo del proceso de rehabilitación, aportando evidencia objetiva del progreso clínico. Esto convierte al análisis espectral en una herramienta diagnóstica y de monitoreo de alta utilidad en entornos clínicos supervisados.
+
 
 
 
