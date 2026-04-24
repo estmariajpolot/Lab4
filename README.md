@@ -375,11 +375,17 @@ La Transformada de Fourier permite descomponer una señal EMG en sus componentes
 ---
 ### Bibliografía
 [1] Y. Tan et al., "Change of bio-electric interferential currents of acute fatigue and recovery in male sprinters," Sports Medicine and Health Science, vol. 2, no. 1, pp. 1–6, 2020. https://doi.org/10.1016/j.smhs.2020.02.004
+
 [2] K. Sahlin, "Metabolic factors in fatigue," Sports Medicine, vol. 13, no. 2, pp. 99–107, 1992. https://doi.org/10.2165/00007256-199213020-00005
+
 [3] D. Constantin-Teodosiu y D. Constantin, "Molecular mechanisms of muscle fatigue," International Journal of Molecular Sciences, vol. 22, no. 21, art. 11587, 2021. https://doi.org/10.3390/ijms222111587
+
 [4] A. Urdampilleta et al., "La fatiga muscular en los deportistas," Archivos de Medicina del Deporte, vol. 32, no. 1, pp. 36–43, 2015.
+
 [5] N. Dimitrova y G. Dimitrov, "Interpretation of EMG changes with fatigue," Journal of Electromyography and Kinesiology, vol. 13, no. 1, pp. 13–36, 2003. https://doi.org/10.1016/S1050-6411(02)00083-4
+
 [6] A. V. Oppenheim y R. W. Schafer, Discrete-Time Signal Processing, 3ra ed. Prentice Hall, 2010.
+
 [7] P. Virtanen et al., "SciPy 1.0: Fundamental algorithms for scientific computing in Python," Nature Methods, vol. 17, pp. 261–272, 2020. https://doi.org/10.1038/s41592-019-0686-2
 
 
