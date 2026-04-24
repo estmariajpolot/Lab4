@@ -148,6 +148,27 @@ En la tabla y la gráfica de evolución se observa que la frecuencia media muest
 
 ### Parte B - Captura de la señal de paciente
 
+Las dos señales reales capturadas sobre el bíceps de un voluntario sano mostraron, tras el filtrado pasa-banda entre 20 y 450 Hz y la eliminación del componente DC, un comportamiento espectral coherente con la fatiga muscular progresiva. En ambas señales se observó una tendencia decreciente en la frecuencia media y mediana a medida que avanzaban las contracciones, evidenciando el desplazamiento espectral hacia frecuencias más bajas asociado al agotamiento muscular. La comparación entre las dos señales permitió verificar la reproducibilidad del fenómeno dentro del mismo sujeto bajo condiciones similares.
+Una parte fragmento de código clave corresponde al centrado y filtrado pasa-banda:
+```python
+# Eliminar componente DC (centrar la señal)
+señal = señal - np.mean(señal)
+
+# Filtro pasa-banda Butterworth orden 4: 20–450 Hz
+from scipy.signal import butter, filtfilt
+
+def filtro_pasabanda(señal, fs, f_low=20, f_high=450, orden=4):
+    nyq = fs / 2
+    low = f_low / nyq
+    high = f_high / nyq
+    b, a = butter(orden, [low, high], btype='band')
+    return filtfilt(b, a, señal)
+
+señal_filtrada = filtro_pasabanda(señal, fs)
+```
+Este bloque garantiza que la señal real quede libre de artefactos de movimiento (por debajo de 20 Hz) y de ruido eléctrico de alta frecuencia (por encima de 450 Hz), conservando únicamente el contenido muscular relevante para el análisis de fatiga.
+
+
 <p align="center">
   <img src="B1.png" width="700">
 </p>
