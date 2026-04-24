@@ -354,6 +354,15 @@ Este bloque divide la señal en tres partes representativas del ejercicio, calcu
 </p>
 
 ---
+### Conclusiones
+
+A partir del desarrollo de esta práctica de laboratorio se pueden establecer las siguientes conclusiones:
+Se logró identificar el desplazamiento espectral hacia frecuencias más bajas en las señales EMG reales como indicador de fatiga muscular, confirmando la utilidad de la frecuencia media y la frecuencia mediana como parámetros diagnósticos en el análisis electromiográfico. Este comportamiento fue coherente con los mecanismos fisiológicos asociados a la acumulación de metabolitos y la reducción de la velocidad de conducción de las fibras musculares durante contracciones sostenidas.
+La señal emulada, aunque permitió familiarizarse con el procesamiento y la segmentación de señales EMG, no reprodujo el patrón espectral esperado de fatiga, lo cual resalta la importancia de trabajar con señales reales para validar fenómenos fisiológicos de esta naturaleza.
+La aplicación del filtrado Butterworth —pasa-bajos para la señal emulada y pasa-banda entre 20 y 450 Hz para las señales reales— resultó fundamental para eliminar ruido y artefactos sin distorsionar el contenido muscular relevante, garantizando la confiabilidad del análisis posterior.
+Respecto a la factibilidad de emplear técnicas espectrales en escenarios no controlados, como el entrenamiento de atletas, se concluye que si bien estas herramientas son prometedoras, su implementación práctica requiere sistemas de adquisición portátiles con alta inmunidad al ruido, algoritmos de procesamiento robustos y protocolos estandarizados de colocación de electrodos. En ausencia de estas condiciones, la variabilidad de la señal puede comprometer la precisión del diagnóstico de fatiga en campo abierto.
+
+---
 ### Preguntas para la Discusión
 - ¿Cambian los valores de frecuencia media y mediana a medida que el músculo se acerca a la fatiga? ¿A qué podría atribuirse este cambio?
   
@@ -363,6 +372,14 @@ Sí, en condiciones de fatiga muscular real, tanto la frecuencia media como la f
   
 La Transformada de Fourier permite descomponer una señal EMG en sus componentes frecuenciales, revelando información que no es perceptible en el dominio del tiempo. En el contexto de terapias de rehabilitación, esta herramienta resulta de gran valor porque permite cuantificar objetivamente el nivel de fatiga muscular de un paciente durante una sesión de ejercicio terapéutico, sin necesidad de procedimientos invasivos. De esta manera, el terapeuta puede ajustar en tiempo real la intensidad y duración del ejercicio, previniendo la sobrecarga muscular y reduciendo el riesgo de lesiones. Además, el seguimiento longitudinal de parámetros espectrales como la frecuencia mediana permite evaluar la evolución de la capacidad muscular del paciente a lo largo del proceso de rehabilitación, aportando evidencia objetiva del progreso clínico. Esto convierte al análisis espectral en una herramienta diagnóstica y de monitoreo de alta utilidad en entornos clínicos supervisados.
 
-
+---
+### Bibliografía
+[1] Y. Tan et al., "Change of bio-electric interferential currents of acute fatigue and recovery in male sprinters," Sports Medicine and Health Science, vol. 2, no. 1, pp. 1–6, 2020. https://doi.org/10.1016/j.smhs.2020.02.004
+[2] K. Sahlin, "Metabolic factors in fatigue," Sports Medicine, vol. 13, no. 2, pp. 99–107, 1992. https://doi.org/10.2165/00007256-199213020-00005
+[3] D. Constantin-Teodosiu y D. Constantin, "Molecular mechanisms of muscle fatigue," International Journal of Molecular Sciences, vol. 22, no. 21, art. 11587, 2021. https://doi.org/10.3390/ijms222111587
+[4] A. Urdampilleta et al., "La fatiga muscular en los deportistas," Archivos de Medicina del Deporte, vol. 32, no. 1, pp. 36–43, 2015.
+[5] N. Dimitrova y G. Dimitrov, "Interpretation of EMG changes with fatigue," Journal of Electromyography and Kinesiology, vol. 13, no. 1, pp. 13–36, 2003. https://doi.org/10.1016/S1050-6411(02)00083-4
+[6] A. V. Oppenheim y R. W. Schafer, Discrete-Time Signal Processing, 3ra ed. Prentice Hall, 2010.
+[7] P. Virtanen et al., "SciPy 1.0: Fundamental algorithms for scientific computing in Python," Nature Methods, vol. 17, pp. 261–272, 2020. https://doi.org/10.1038/s41592-019-0686-2
 
 
