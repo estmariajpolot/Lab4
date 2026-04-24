@@ -177,9 +177,13 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
   <em> Señal 1 EMG (filtrada) </em>
 </p>
 
+La señal EMG filtrada muestra ráfagas de actividad muscular asociadas a la contracción del bíceps. Al inicio se observa mayor densidad y amplitud de los potenciales, mientras que hacia el final se evidencian cambios en la envolvente relacionados con la fatiga muscular. Esto refleja la progresiva alteración en el reclutamiento y comportamiento de las unidades motoras.
+
 <p align="center">
   <img src="B2.png" width="700">
 </p>
+
+La frecuencia media y mediana presentan una tendencia creciente a lo largo del tiempo. Este comportamiento sugiere un reclutamiento adicional de unidades motoras tipo II en fases avanzadas de fatiga, elevando el contenido frecuencial de la señal, especialmente en el tramo final del registro.
 
 <p align="center">
   <em> Evolución de frecuencias Señal 1  EMG (filtrada) </em>
@@ -193,6 +197,8 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
   <em> Tabla de resultados </em>
 </p>
 
+Los valores tabulados muestran la evolución cuantitativa de las frecuencias media y mediana por segmento. Se evidencia una tendencia general al aumento, con un incremento más pronunciado en los últimos intervalos, indicando cambios en la dinámica muscular durante el esfuerzo sostenido.
+
 <p align="center">
   <img src="B3.png" width="700">
 </p>
@@ -200,6 +206,8 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
 <p align="center">
   <em> Señal 1 FFT Global </em>
 </p>
+
+El espectro global concentra su energía principalmente entre 20 y 200 Hz, con un pico alrededor de 65 Hz. La distribución espectral es característica de señales EMG, confirmando la adecuada eliminación de ruido y la preservación de la información muscular relevante.
 
 <p align="center">
   <img src="B4.png" width="700">
@@ -209,6 +217,8 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
   <em> Señal 1 FFT Ventanas</em>
 </p>
 
+La comparación entre inicio, mitad y final evidencia un desplazamiento progresivo del contenido espectral hacia frecuencias más bajas. Este fenómeno indica una disminución en la velocidad de conducción de los potenciales de acción debido a la fatiga muscular.
+
 <p align="center">
   <img src="B5.png" width="700">
 </p>
@@ -216,6 +226,8 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
 <p align="center">
   <em> Señal 1  desplazamiento del pico </em>
 </p>
+
+El pico espectral disminuye de forma sostenida desde el inicio hasta el final del ejercicio. Esta caída representa un indicador directo de fatiga, asociado a cambios fisiológicos en las fibras musculares y en la conducción eléctrica.
 
 <p align="center">
   <img src="T3.png" width="700">
@@ -225,6 +237,8 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
   <em> Tabla de resultados </em>
 </p>
 
+Los datos muestran una reducción significativa de la frecuencia pico entre segmentos, confirmando cuantitativamente el desplazamiento espectral y validando su uso como métrica de fatiga muscular.
+
 <p align="center">
   <img src="B2.1.png" width="700">
 </p>
@@ -232,6 +246,8 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
 <p align="center">
   <em> Señal 2 EMG (filtrada) </em>
 </p>
+
+La segunda señal presenta un comportamiento similar a la primera, con actividad sostenida durante la contracción. Se observa una disminución progresiva en la intensidad de los bursts, consistente con el desarrollo de fatiga.
 
 <p align="center">
   <img src="B2.5.png" width="700">
@@ -241,6 +257,9 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
   <em> Señal 2  desplazamiento del pico </em>
 </p>
 
+El pico espectral también presenta una tendencia descendente clara. Este comportamiento confirma la reproducibilidad del fenómeno de fatiga en mediciones realizadas bajo las mismas condiciones experimentales. 
+
+
 <p align="center">
   <img src="B2.2.png" width="700">
 </p>
@@ -248,6 +267,8 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
 <p align="center">
   <em> Evolución de frecuencias Señal 2  EMG (filtrada) </em>
 </p>
+
+A diferencia de la Señal 1, tanto la frecuencia media como la mediana disminuyen progresivamente. Este patrón coincide con el comportamiento teórico esperado en procesos de fatiga muscular.
 
 <p align="center">
   <img src="T4.png" width="700">
@@ -257,6 +278,8 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
   <em> Tabla de resultados </em>
 </p>
 
+Los valores reflejan una reducción sostenida de las frecuencias características. La frecuencia mediana presenta mayor sensibilidad al descenso, consolidándose como un indicador robusto de fatiga.
+
 <p align="center">
   <img src="B2.3.png" width="700">
 </p>
@@ -264,6 +287,7 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
 <p align="center">
   <em> Señal 2 FFT Global </em>
 </p>
+El espectro global mantiene una distribución similar a la Señal 1, con energía concentrada en el rango típico del EMG. La ligera diferencia en el pico se atribuye a variaciones experimentales en la adquisición.
 
 ---
 ### Parte C -  Análisis espectral mediante FFT
@@ -313,6 +337,8 @@ Este bloque divide la señal en tres partes representativas del ejercicio, calcu
   <em> Señal 1  desplazamiento del pico </em>
 </p>
 
+Se observa un descenso progresivo de la frecuencia pico a lo largo del ejercicio. Este desplazamiento hacia frecuencias más bajas es un indicador claro de fatiga muscular, asociado a la disminución de la velocidad de conducción de los potenciales de acción en las fibras musculares.
+
 <p align="center">
   <img src="B2.4.png" width="700">
 </p>
@@ -320,10 +346,17 @@ Este bloque divide la señal en tres partes representativas del ejercicio, calcu
 <p align="center">
   <em> Señal 2 FFT Ventanas</em>
 </p>
+La comparación entre los espectros de inicio, mitad y final muestra una redistribución de la energía hacia frecuencias más bajas. La reducción de componentes de alta frecuencia evidencia el deterioro funcional del músculo durante la contracción sostenida.
 
 <p align="center">
   <img src="B2.5.png" width="700">
 </p>
+
+<p align="center">
+  <em> Señal 2  desplazamiento del pico </em>
+</p>
+
+El pico espectral presenta una tendencia descendente consistente, confirmando el proceso de fatiga. La variación es similar a la observada en la Señal 1, lo que respalda la reproducibilidad del fenómeno.
 
 <p align="center">
   <img src="B4.png" width="700">
@@ -333,9 +366,7 @@ Este bloque divide la señal en tres partes representativas del ejercicio, calcu
   <em> Señal 1 FFT Ventanas</em>
 </p>
 
-<p align="center">
-  <em> Señal 2  desplazamiento del pico </em>
-</p>
+Los espectros muestran un desplazamiento progresivo del contenido frecuencial hacia la zona baja del espectro. Este comportamiento refleja el efecto de la fatiga sobre la dinámica de las unidades motoras.
 
 <p align="center">
   <img src="T3.png" width="700">
@@ -345,6 +376,8 @@ Este bloque divide la señal en tres partes representativas del ejercicio, calcu
   <em> Tabla de resultados </em>
 </p>
 
+Los valores de frecuencia pico por segmento evidencian una disminución significativa entre el inicio y el final. Esta tendencia cuantifica el desplazamiento espectral observado gráficamente.
+
 <p align="center">
   <img src="T5.png" width="700">
 </p>
@@ -352,6 +385,8 @@ Este bloque divide la señal en tres partes representativas del ejercicio, calcu
 <p align="center">
   <em> Tabla de resultados </em>
 </p>
+
+Los datos confirman una reducción sostenida de la frecuencia pico. La consistencia con la Señal 1 valida el uso de este parámetro como indicador confiable de fatiga muscular.
 
 ---
 ### Conclusiones
