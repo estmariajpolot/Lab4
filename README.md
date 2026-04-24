@@ -267,6 +267,51 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
 
 ---
 ### Parte C -  Análisis espectral mediante FFT
+El análisis de la FFT en tres segmentos clave (inicio, medio y final) de cada señal real evidenció un desplazamiento progresivo del pico espectral hacia frecuencias más bajas conforme avanzaba el ejercicio. Este resultado es consistente con la teoría de fatiga muscular: la reducción de la velocidad de conducción de los potenciales de acción desplaza la energía espectral de la señal EMG hacia componentes frecuenciales menores. Los gráficos de barras y líneas de tendencia del pico espectral por segmento confirmaron visualmente esta tendencia en ambas señales, validando el uso de la FFT como herramienta diagnóstica objetiva para la detección de fatiga en electromiografía de superficie.
+Una parte fragmento de código clave corresponde al FFT por segmento y detección del pico espectral:
+
+```python
+from scipy.fft import fft, fftfreq
+import numpy as np
+
+segmentos = np.array_split(señal_filtrada, 3)  # inicio, medio, final
+etiquetas = ['Inicio', 'Medio', 'Final']
+picos = []
+
+for seg, etiqueta in zip(segmentos, etiquetas):
+    N = len(seg)
+    X = np.abs(fft(seg))[:N//2]
+    freqs = fftfreq(N, 1/fs)[:N//2]
+
+    # Frecuencia pico
+    f_pico = freqs[np.argmax(X)]
+    picos.append(f_pico)
+
+    plt.plot(freqs, X, label=etiqueta)
+
+plt.xlabel("Frecuencia (Hz)")
+plt.ylabel("Magnitud")
+plt.title("FFT por segmento")
+plt.legend()
+plt.grid()
+plt.show()
+
+# Gráfico de barras del desplazamiento del pico
+plt.bar(etiquetas, picos, color=['green', 'orange', 'red'])
+plt.ylabel("Frecuencia pico (Hz)")
+plt.title("Desplazamiento del pico espectral")
+plt.grid(axis='y')
+plt.show()
+```
+Este bloque divide la señal en tres partes representativas del ejercicio, calcula la FFT de cada una e identifica la frecuencia de mayor magnitud en cada segmento, permitiendo cuantificar y visualizar el desplazamiento espectral asociado a la fatiga.
+
+<p align="center">
+  <img src="B5.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 1  desplazamiento del pico </em>
+</p>
 
 <p align="center">
   <img src="B2.4.png" width="700">
@@ -281,7 +326,23 @@ Este bloque garantiza que la señal real quede libre de artefactos de movimiento
 </p>
 
 <p align="center">
+  <img src="B4.png" width="700">
+</p>
+
+<p align="center">
+  <em> Señal 1 FFT Ventanas</em>
+</p>
+
+<p align="center">
   <em> Señal 2  desplazamiento del pico </em>
+</p>
+
+<p align="center">
+  <img src="T3.png" width="700">
+</p>
+
+<p align="center">
+  <em> Tabla de resultados </em>
 </p>
 
 <p align="center">
